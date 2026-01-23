@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags de Agrupamento</title>
+    <style>
+body{
+font-family: Arial, Helvetica, sans-serif;
+background-color: dimgray;
+}
+
+header{
+    background-color: rgb(250, 19, 19);
+    height: 90px;
+    padding: 20px;
+    margin: auto;
+   
+}
+h1{
+    background-color: aliceblue;
+    color: red;
+    padding-left: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.429);
+
+}
+
+nav{
+    background-color: white;
+    padding: 3px;
+    border-radius: 3px 3px 3px 3px;
+    
+}
+
+nav > a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+   margin: 30px;
+   justify-content: space-between;
+    align-items: center;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+    color: yellow;
+}
+
+main{
+    background-color: aliceblue;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#assuntos{
+    background-color: aquamarine;
+    padding: 10px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.para{
+    font-weight: bold;
+    color: red;
+}
+
+article{
+    background-color: beige;
+    text-align: justify;
+    padding-bottom: 1px;
+}
+
+article > aside{
+    background-color: aquamarine;
+    margin-top: 5px;
+}
+h3{
+    border: 9px solid black;
+    padding: 10px;
+    border-image-source: url("impalas.jpg");
+    border-image-slice: 27%;
+    border-image-repeat: repeat;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+footer > a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 5px;
+}
+
+span{
+    font-weight: bold;
+    color: yellow;
+}
+
+footer > a:hover{
+    text-decoration: underline;
+    color: yellow;
+}
+    </style>
+</head>
+<body>
+  <!--<p>As tags de Agrupamento sao: header, main, footer, nav, </p>-->
+
+<header>
+    <h1>Meu Site</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Cursos</a>
+        <a href="#">Informaçoes</a>
+        <a href="#">Sobre Nos</a>
+        <a href="#">Contactos</a>
+    
+    </nav>
+</header>
+   
+   <main>
+    <section id="assuntos">
+            <P style="font-weight: bold; color: #f50606;">Cadastrar-se</P>
+            <input type="password" id="pwd" placeholder="Introduza o seu email" />
+            <BR></BR>
+            <input type="password" id="pwd" placeholder="Palavra Passe" />
+
+            <input type="checkbox" onclick="pwd.type = this.checked ? 'text' : 'password'">
+    </section>
+
+    <section id="noticias">
+        <p class="para">Politica | Desporto | Economia | Educaçao</p>
+        <article>
+            
+            <h2>Noticias sobre Maputo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, corrupti natus tempora vero mollitia laboriosam vel tempore exercitationem nihil sed accusantium, adipisci ut animi, quisquam velit quia omnis recusandae repellat.</p>
+            <aside>
+                <p>Artigo escrito por Manuel Victorino</p>
+            </aside>
+        </article>
+        <p class="para">Africa | Natureza | Mundo | Ciencias</p>
+        <article>
+            <h2>Novidades</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus harum, unde, natus commodi dolorem aut quis velit deleniti esse eaque exercitationem dolore neque a quisquam odio voluptate, cumque quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rem non ea commodi deleniti illo, consequuntur quis voluptatum modi autem libero voluptas laborum culpa expedita. Aliquid temporibus eaque qui voluptatibus.</p>
+            
+            <h2>Africa</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, dicta voluptatum. Perspiciatis quidem quo molestias odit recusandae id consequuntur vero, dolorem debitis commodi delectus dolorum nobis adipisci, est repellat quasi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum minima numquam ipsam id temporibus quos sit et, cumque, optio a quod eos recusandae corporis alias assumenda explicabo similique ipsum perspiciatis!</p>
+            
+            <h2>Natureza</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quae culpa eligendi aperiam consequuntur sint veritatis officia, quos esse dolore minus, aliquam possimus sunt quis atque inventore voluptate laboriosam saepe.</p>
+
+            <h2>Mundo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam atque numquam impedit libero assumenda rem in nulla natus ratione, nostrum commodi nam quis odit similique voluptatum, voluptatibus sed, ea vel?</p>
+
+            <h2>Ciencias</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, explicabo unde illo ipsa quisquam nobis fugiat. Inventore repellat atque voluptates, cum rerum, repellendus debitis tempore fuga officia omnis nam sunt.</p>
+
+            <aside>Artigo pesquisado por Olinda Chiburre</aside>
+        </article>
+    </section>
+
+    <h3>Testes de Cientificos</h3>
+   </main>
+   <footer>
+    <p>© 2026 - Desenvolvido por <span>M-Links</span></p>
+    <a href="#">Sobre Nos</a> |
+    <a href="#">Contactos</a> |
+    <a href="#">Projetos</a>
+   </footer>
+
+</body>
+</html>

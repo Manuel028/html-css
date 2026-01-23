@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    
+</head>
+<body bgcolor="pink">
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <p>Para criar lista Ordenadas usamos a tag &lt;ol&gt; e dentro dela listamos os itens em tag &lt;li&gt; </p>
+    <p>Vamos listar uma rotina diaria:</p>
+    <ol>
+        <li>Acordar;
+        <li>Escovar os dentes;</li>
+        <li>Fazer banho;</li>
+        <li>Matabichar;</li>
+        <li>Ir a escola.</li>
+    </ol>
+
+    <p>Para criar uma lista mais personalizada onde  o indice diferente e iniciando em qualquer posicao, adicionamos dentro da <strong>tag &lt;ol&gt; type ="" para indicar tipo de indice e o start ="" para a posicao</strong></p>
+    <ol type="a" >
+        <li>Acordar;
+        <li>Escovar os dentes;</li>
+        <li>Fazer banho;</li>
+        <li>Matabichar;</li>
+        <li>Ir a escola.</li>
+    </ol>
+    <ol type="A" >
+        <li>Acordar;
+        <li>Escovar os dentes;</li>
+        <li>Fazer banho;</li>
+        <li>Matabichar;</li>
+        <li>Ir a escola.</li>
+    </ol>
+    <ol start="3" >
+        <li>Acordar;
+        <li>Escovar os dentes;</li>
+        <li>Fazer banho;</li>
+        <li>Matabichar;</li>
+        <li>Ir a escola.</li>
+    </ol>
+    <h2>Listas nao Ordenadas</h2>
+    <p>Listas onde nao ha ordem , usamos a tag &lt;ul&gt; e podemos tambem variar a forma visual em disco(padrao), circo e quadrado bastando adicionar na dentro da tab ul o type = ""</p>
+    <ul>
+        <li>Comprar pao</li>
+        <li>Comprar Leite</li>
+        <li>Comprar tomate</li>
+        <li>Comprar arroz</li>
+        <li>Comprar feijao</li>
+    </ul>
+    <ul type = "square">
+        <li>Comprar pao</li>
+        <li>Comprar Leite</li>
+        <li>Comprar tomate</li>
+        <li>Comprar arroz</li>
+        <li>Comprar feijao</li>
+    </ul>
+<ul type = "circle">
+        <li>Comprar pao</li>
+        <li>Comprar Leite</li>
+        <li>Comprar tomate</li>
+        <li>Comprar arroz</li>
+        <li>Comprar feijao</li>
+    </ul>
+<h2>Minhas linguagens favoritas (Listas Mistas)</h2>
+<ol>
+    <li>Antigas</li>
+    <ol type="a">
+        <li>Clepper</li>
+        <li>Visual</li>
+        <li>Fortran</li>
+        <li>Delphi</li>
+    </ol>
+    <li>Novas</li>
+    <ol type="a">
+        <li>Java</li>
+        <li>Python</li> 
+        <li>Javascript</li>   
+        <li>Kotlin</li>
+    </ol>
+</ol>
+
+<p>Para lista tipo alfanumericas, tambem podemos organizar na mesma ordem sequencial adicionando start na segunda lista </p>
+<ol>
+    <li>Antigas</li>
+    <ol type="a">
+        <li>Clepper</li>
+        <li>Visual</li>
+        <li>Fortran</li>
+        <li>Delphi</li>
+    </ol>
+    <li>Novas</li>
+    <ol type="a" start="5">
+        <li>Java</li>
+        <li>Python</li> 
+        <li>Javascript</li>   
+        <li>Kotlin</li>
+    </ol>
+</ol>
+
+
+<h2>Meus topicos favoritos</h2>
+<ol>
+    <li>Matematica</li>
+        <ul type = "disc">
+            <li>Algebra</li>
+                <ol>
+                    <li>Equacoes quadraticas</li>
+                    <li>Logaritmos</li>
+                </ol>
+            <li>Calculo</li>
+                <ol>
+                    <li>Derivadas</li>
+                    <li>Integrais</li>
+                </ol>
+        </ul>
+    <li>Fisica</li>
+    <ol>
+        <li>Cinematica</li>
+            <ul>
+                <li>MRU</li>
+                <li>MRUA e MRUR</li>
+                <li>Queda livre</li>
+            </ul>
+        <li>Dinamica</li>
+            <ul>
+                <li>Forca gravitacional</li>
+                <li>Quantidade de Movimento</li>
+            </ul>
+    </ol>
+</ol>
+
+<h2>Listas de Definicoes</h2>
+<p>Para listas de definicoes usamos a tag &lt;dl&gt; onde dentro dela usamos a tag &lt;dt&gt; para o termo e &lt;dd&gt; para a definicao do termo </p>
+<dl>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcacao para a criacao do conteudo de um site.</dd>
+    <dt>CSS</dt>
+    <dd>Linguagem de marcacao para a criacao de do design de um site.</dd>
+    <dt>Javascript</dt>
+    <dd>Linguagem de programacao para a criacao de interatividade de um site.</dd>
+
+</dl>
+</body>
+</html>

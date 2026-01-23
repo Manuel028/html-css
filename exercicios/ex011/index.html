@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminue o tamanho do seu navegador.</p> <!-- Adaptando o tamanho imagem a tela do navegador -->
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+       <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> 
+      <img src="imagens/foto-g.png"  alt="Imagem flexivel">  
+    </picture>
+
+    <h1>Reproduzindo audios</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p> 
+    <p>Audio mp3 no site adicionamos na tag a e no src"o ficheiro em formato mp3" e parametro controls e se necessario o autoplay</p>
+    <audio src="midia/perola_-_tudo_para_mim.mp3"  controls> </audio>
+
+    <p>Audio em outros formatos no site adicionamos a tag &lt;audio&gt; e no src="outro formato" type="audio/extensao" e parametro controls(para a barra reprodutor) e se necessario o autoplay(para auto reproducao) e loop(para reiniciar apos termino)</p>
+    <audio src="midia/myaudio.mp4" type="audio/mp4" controls loop> </audio>
+
+    <p>Se quiser ainda baixar o audio e' so  <a href="midia/perola_-_tudo_para_mim.mp3" download="perola_-_tudo_para_mim.mp3">clicar aqui!</a></p>
+</body>
+</html>

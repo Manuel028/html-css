@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formataçoes</title>
+</head>
+<body>
+ <h1>Outras Formataçoes</h1> 
+ <h2>Codigo-fonte</h2>
+ <p>Para resolver as diferenças de espaços entre as letras num Codigo-fonte usamos a tag &lt;code&gt; </p>
+
+ <p>Codigo sem a tab &lt;code&gt;: <br>
+ O comando document.getElementById('teste') e escrito em linguagem Javascript.</p>
+
+ <p> Codigo com a tab &lt;code&gt;: <br>
+    O comando <code>document.getElementById('teste')</code> e escrito em linguagem Javascript.</p> <!--Para resolver as diferenças de espaços entre as letras -->
+
+ <p>Um caso: <br> quando usamos a tab &lt;code&gt; para descrever o Codigo-fonte, o codigo nao fica organizado, como:</p>
+ <code>
+    num = int(input('Digite um numero'))
+    if num % 2 == 0:
+        print(f'0 numero{num} e par')
+    else:
+        print(f'0 numero{num} e impar)
+    print('Fim do programa')
+ </code>  
+ <p>Para organizarmos na forma de codigo fonte temos que incluir toda tag &lt;code&gt; no tab &lt;pre&gt;  </p>
+     <pre>
+         <code>
+    num = int(input('Digite um numero'))
+    if num % 2 == 0:
+        print(f'0 numero{num} e par')
+    else:
+        print(f'0 numero{num} e impar)
+    print('Fim do programa')
+          </code> <!--Shift + Tab para organizar os espacos das linhas-->
+     </pre>
+
+     <h2>Citacoes</h2>
+     <p><strong>Podemos colocar diretamente a citacao entre as aspas "":</strong></p>
+     <p>Como diria o pai de um amigo:"o computador e um burro muito rapido" </p>
+
+     <p><strong>Ou ainda usando a tag &lt;q&gt; na citacao (o recomendado):</strong></p>
+     <p>Como diria o pai de um amigo:<q>o computador e um burro muito rapido</q> </p>
+
+     <h2>Citacoes completas</h2>
+     <p>Outra forma de tambem de citar, usando a tab &lt;blockquote&gt; entre a citacao</p>
+     <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
+     <blockquote>
+        A diferença entre elementos inline e um bloco de texto e importante. os elementos HTML neste capitulo descrevem os blocos de texto.
+     </blockquote>
+
+     <h2>Abreviacoes</h2>
+     <p>Quando temos uma Sigla ou Abreviacao e queremos mostrar o seu significado, apenas passando o curso por cima da sigla. usamos tag &lt;abbr title = ""&gt; na sigla e no title descrevemos o significado</p>
+     <p>Estou estudando <abbr title="HyperTex Markup Language">HTML</abbr> e <abbr title="Cascading Styke Shorts">CSS</abbr>. Estou gostando!</p>
+
+     <h2>Texto invertido</h2>
+     <p>Para invertemos as letras e frases usamos a tag &lt;bdo&gt; dir= "rtl"</p>
+     <p><bdo dir="rtl">Estou aprendendo a criar coisas no HTML</bdo></p>
+</body>
+</html>

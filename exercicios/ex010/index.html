@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+<h1>Trabalhando com links</h1>
+    <h2>Usando links externos</h2>
+    <p>Para adicionarmos um link externo usamos a tag &lt;a href="o link do site externo" e o texto link&gt;</p>
+        <p>Voce pode acessar o meu <a href="https://www.youtube.com/">repositorio offline no Youtube</a> </p>
+
+    <p>So que tem um problema, quando clica-se no link externo o site do link e' sobreposto ao do site mae, ou seja o link externo vai ser aberto na mesma aba fazendo com que o site mae esteja oculto. <br> Para isso devemos adicionar o parametro target e rel dentro da tag ficando <strong>&lt;a href="o link do site externo" target = "blank" rel = "external"&gt;</strong></p>
+
+    <p>Agora o link externo vai ser aberto numa outra abb</p>
+    <p>Voce pode acessar as minhas <a href="https://www.youtube.com/" target="_blank" rel="external">transferencias offline no Youtube</a> </p>
+
+    <h2>Usando links internos</h2>
+    <p>Para criar links internos devemos criar um outro site dentro da nosso arquivo  e colocarmos dentro da tag(no site mae) &lt;a no href=" o nome do outro site" e tambem o mecanismo next para indicar proxima pagina e o seu texto link.&gt;</p>
+
+    <p>Esta e' a primeira pagina do site. Se quiser, pode acessar tambem a minha <a href="pag02.html" rel="next">Segunda pagina</a></p>
+
+    <p>Se quiser pode tambem ver a pagina de noticias: <a href="noticias/pag03.html" rel="next">Noticias do Dia</a></p>
+
+    <h2>Links para Downloads</h2>
+    <p>Para links de downloads ainda usamos a tag &lt;a&gt; e devemos colocar o arquivo a ser feito o download no nosso arquivo mae e mencionarmos o arquivo na tag &lt;a&gt;, mas assim o downloade e' direcionado para a extensao do arquivo no navegador, para o download direto adicionarmos na tag o parametro download="nome do arquivo" </p>
+    <ol>
+        <p><strong>Extensao no navegador</strong></p>
+        <li><a href="livros/mysql exercicios.pdf">Baixar o livro em PDF</a></li>
+
+        <p><strong>Download direto</strong></p>
+        <li><a href="livros/mysql exercicios.pdf" download="mysql exercicios">Baixar o livro em PDF</a></li>
+        <li><a href="livros/mysql exercicios compactado.zip" download="mysql exercicios compactado">Livro compactado em ZIP</a></li>
+    </ol>
+    
+</body>
+</html>

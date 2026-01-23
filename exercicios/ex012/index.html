@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Videos</title>
+</head>
+<body>
+    <h1>Videos no site</h1>
+    <hr>
+<h2>Adicionando videos do servidor Local</h2>
+    Para video mp4 no site usamos a tag &lt;video&gt; no src="o ficheiro em mp4" e definir a ocupacao do video com width="resolucao" adicionamos tambem o parametro controls, e loop se necessario
+    <p>Tambem podes assistir ao meu video aqui no site.</p>
+    <video src="midias/2m-video.mp4" width="300"  controls loop></video>
+
+    <p>Para video de outros formatos no site usamos a tag &lt;video&gt; no src="o file em outro formato" e definir a ocupacao do video com width="resolucao" adicionamos tambem o parametro controls, e loop se necessario</p>
+    <p>Tambem podes assistir ao meu video aqui no site.</p>
+    <video src="midias/cheza-for-jesus.mkv" type="video/mkv" width="300" controls loop></video>
+
+    <p>Podemos tambem colocar uma capa(imagem) de video bastando adicionar na tag video o parametro poster ="a imagem de capa"</p>
+
+    <video poster="midias/imagem-capa.png" src="midias/cheza-for-jesus.mkv" type="video/mkv" width="300" controls ></video>
+
+    <p>Se deseja fazer o download do video <a href="midias/casal-video.mp4" download="casal-video.mp4"> clique aqui!</a></p>
+
+<h2>Adicionando video de outros servidores (YouTube)</h2>
+<p>E' so copiar o codigo( em Incorpar) do video e colar no HTML </p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C-GF6zsJcbo?si=2QSMtnS1iXkVa0Ta" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>

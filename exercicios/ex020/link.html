@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        SELETORES PERSONALIZADOS
+        #  = id
+        .  = class
+        :  = pseudo-class
+        :: = pseudo-elemento
+        >  = children
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: rgb(13, 228, 228);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* Para destacar site visitado*/
+        a:visited{
+            color: rgb(26, 86, 86);
+        }
+        /* Quando passar mouse, mudar a cor do texto*/
+        a:hover{
+            color: rgb(221, 204, 18);
+            text-decoration: underline;
+        }
+        /* Para destacar emquanto abrimos ou clicar em um link*/
+        a:active{
+            color: blue;
+        }
+        /* para formatar uma so determinado elemento diante de muitos*/
+        .especial {
+            background-color: rgb(250, 22, 22);
+        }
+        .especial::before{
+            content:' 🠊' ;
+        }
+        .especial::after{
+            content: ' 🠈';
+            
+        }
+    </style>
+</head>
+<body>
+  <h1>Personalizando Links</h1>  
+  <ul>
+    <li><a href="https://web.whatsapp.com/" target="_blank">Whatsapp</a></li>
+    <li><a href="https://www.facebook.com/?_rdc=2&_rdr#" target="_blank">Pagina de facebook</a></li>
+    <li><a href="https://redesenho-do-site-bio.vercel.app/" target="_blank" class="especial">Site de Man-Link</a></li>
+  </ul>
+</body>
+</html>
