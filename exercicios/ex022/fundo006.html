@@ -13,12 +13,17 @@
             background-position: center center;
             background-repeat: repeat-y;
             background-size: cover;
+            background-attachment: fixed;
 
         }
 
+        /* ShortHand - Background
+            color > image > position > repeat > [size] > attachment
+        */
+
         main {
             background-color: white;
-            width: 400px;
+            max-width: 700px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -28,9 +33,10 @@
         main > h1{
             background-color: rgb(0, 255, 170);
             padding: 10px;
-            width: 400px;
+            max-width: 700px;
             margin: auto;
             margin-left: -10px;
+            margin-right: -10px;
             margin-top: -10px;
             border-radius: 15px 15px 0px 0px;
         }
