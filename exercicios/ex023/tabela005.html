@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios com Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+            
+       } /*
+        tbody tr:hover{
+            background-color: chartreuse;
+        }*/
+
+       col.cnome{
+            background-color: chartreuse;
+       }
+       col.csexo{
+        background-color: yellow;
+       }
+        </style>
+</head>
+<body>
+    <h1>Exercicios de Tabelas</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprofissao">
+        </colgroup>
+        
+        <caption>
+            Cadastro
+        </caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissao</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Olinda</td>
+                <td>F</td>
+                <td>23</td>
+                <td>Psicologa</td>
+            </tr>
+            <tr>
+                <td>Benson</td>
+                <td>M</td>
+                <td>22</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Judite</td>
+                <td>F</td>
+                <td>34</td>
+                <td>Enfermeira</td>
+            </tr>
+            <tr>
+                <td>Sofia</td>
+                <td>F</td>
+                <td>32</td>
+                <td>Medica</td>
+            </tr>
+            <tr>
+                <td>Joao</td>
+                <td>M</td>
+                <td>29</td>
+                <td>Mecanico</td>
+            </tr>
+            <tr>
+                <td>Linda</td>
+                <td>F</td>
+                <td>38</td>
+                <td>Jurista</td>
+            </tr>
+            <tr>
+                <td>Odete</td>
+                <td>F</td>
+                <td>30</td>
+                <td>Professora</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

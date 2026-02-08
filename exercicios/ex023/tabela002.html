@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        thead, tfoot{
+          background-color: gray;
+          color: white;  
+        }
+
+       td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        /*tbody > tr:nth-child(2n){
+            background-color: lightgray;
+            
+        }*/
+        
+        col.Estado {
+            background-color: greenyellow;
+        }
+
+        tbody  :hover{
+            background-color: yellow;
+        }
+        .num{
+            text-align: right;
+        }
+        .num1{
+            text-align: right;
+            font-weight: bolder;
+        }
+
+
+    </style>
+</head>
+<body>
+   <h1>Uso de tabelas grandes</h1>
+   
+   <!--
+   Anatomia de tabelas grandes
+    Table
+        Caption = Titulo da tabela
+        Thead
+            TR, TD, TH
+        Tbody
+            TR, TD, TH
+        Tfoot
+            TR, TD, TH            
+   -->
+    <table>
+        <colgroup>
+            <col class="Estado">
+            <col class="Populacao">
+        </colgroup>
+
+        <caption>
+          Populacao de estados Africanos  
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">Populacao</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mocambique</td>
+                <td class="num">36.360.000</td>
+            </tr>
+            <tr>
+                <td>Angola</td>
+                <td class="num">37.050.041</td>
+            </tr>
+            <tr>
+                <td>Africa do Sul</td>
+                <td class="num">55.899.840</td>
+            </tr>
+            <tr>
+                <td>Namibia</td>
+                <td class="num">25.000.822</td>
+            </tr>
+
+            <tr>
+                <td>Tanzania</td>
+                <td class="num">26.050.001</td>
+            </tr>
+            <tr>
+                <td>Malawi</td>
+                <td class="num">5.899.240</td>
+            </tr>
+            <tr>
+                <td>Zimbabwe</td>
+                <td class="num">38.000.802</td>
+            </tr>
+
+            <tr>
+                <td>Lesotho</td>
+                <td class="num">2.050.005</td>
+            </tr>
+            <tr>
+                <td>Swazilandia</td>
+                <td class="num">899.840</td>
+            </tr>
+            <tr>
+                <td>Zambia</td>
+                <td class="num">47.000.111</td>
+            </tr>
+
+            <tr>
+                <td>Botsowana</td>
+                <td class="num">57.050.097</td>
+            </tr>
+            <tr>
+                <td>Ruanda</td>
+                <td class="num">10.899.200</td>
+            </tr>
+            <tr>
+                <td>Rep. Dem. de Congo</td>
+                <td class="num">60.000.025</td>
+            </tr>
+
+            <tr>
+                <td>Gambia</td>
+                <td class="num">17.050.040</td>
+            </tr>
+            <tr>
+                <td>Etiopia</td>
+                <td class="num">16.899.811</td>
+            </tr>
+            <tr>
+                <td>Egipto</td>
+                <td class="num">14.000.833</td>
+            </tr>
+
+            <tr>
+                <td>Guine-Equatorial</td>
+                <td class="num">31.050.049</td>
+            </tr>
+            <tr>
+                <td>Cabo Verde</td>
+                <td class="num">13.666.011</td>
+            </tr>
+            <tr>
+                <td>Nigeria</td>
+                <td class="num">66.000.888</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num1">685.400.669</td>
+            </tr>
+
+        </tfoot>
+
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo expedita similique fuga sit, ut maxime molestias eveniet quo, reprehenderit amet iure ad eos odio error! Iusto commodi repudiandae sint eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea recusandae eum velit. Suscipit quaerat maxime est, commodi quod delectus excepturi perferendis ea nulla soluta nam eligendi in voluptate eveniet enim! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur recusandae, sit temporibus mollitia nemo, reiciendis accusantium debitis alias ipsum velit iusto nesciunt facere voluptate maxime at distinctio repudiandae quaerat aut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur tempora, quibusdam quam facilis quae corrupti error assumenda eveniet totam temporibus perferendis, deleniti veritatis nostrum dicta numquam dolorem distinctio voluptatum sequi.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo expedita similique fuga sit, ut maxime molestias eveniet quo, reprehenderit amet iure ad eos odio error! Iusto commodi repudiandae sint eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea recusandae eum velit. Suscipit quaerat maxime est, commodi quod delectus excepturi perferendis ea nulla soluta nam eligendi in voluptate eveniet enim! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur recusandae, sit temporibus mollitia nemo, reiciendis accusantium debitis alias ipsum velit iusto nesciunt facere voluptate maxime at distinctio repudiandae quaerat aut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur tempora, quibusdam quam facilis quae corrupti error assumenda eveniet totam temporibus perferendis, deleniti veritatis nostrum dicta numquam dolorem distinctio voluptatum sequi.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo expedita similique fuga sit, ut maxime molestias eveniet quo, reprehenderit amet iure ad eos odio error! Iusto commodi repudiandae sint eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea recusandae eum velit. Suscipit quaerat maxime est, commodi quod delectus excepturi perferendis ea nulla soluta nam eligendi in voluptate eveniet enim! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur recusandae, sit temporibus mollitia nemo, reiciendis accusantium debitis alias ipsum velit iusto nesciunt facere voluptate maxime at distinctio repudiandae quaerat aut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur tempora, quibusdam quam facilis quae corrupti error assumenda eveniet totam temporibus perferendis, deleniti veritatis nostrum dicta numquam dolorem distinctio voluptatum sequi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo expedita similique fuga sit, ut maxime molestias eveniet quo, reprehenderit amet iure ad eos odio error! Iusto commodi repudiandae sint eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea recusandae eum velit. Suscipit quaerat maxime est, commodi quod delectus excepturi perferendis ea nulla soluta nam eligendi in voluptate eveniet enim! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur recusandae, sit temporibus mollitia nemo, reiciendis accusantium debitis alias ipsum velit iusto nesciunt facere voluptate maxime at distinctio repudiandae quaerat aut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur tempora, quibusdam quam facilis quae corrupti error assumenda eveniet totam temporibus perferendis, deleniti veritatis nostrum dicta numquam dolorem distinctio voluptatum sequi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo expedita similique fuga sit, ut maxime molestias eveniet quo, reprehenderit amet iure ad eos odio error! Iusto commodi repudiandae sint eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea recusandae eum velit. Suscipit quaerat maxime est, commodi quod delectus excepturi perferendis ea nulla soluta nam eligendi in voluptate eveniet enim! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur recusandae, sit temporibus mollitia nemo, reiciendis accusantium debitis alias ipsum velit iusto nesciunt facere voluptate maxime at distinctio repudiandae quaerat aut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur tempora, quibusdam quam facilis quae corrupti error assumenda eveniet totam temporibus perferendis, deleniti veritatis nostrum dicta numquam dolorem distinctio voluptatum sequi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo expedita similique fuga sit, ut maxime molestias eveniet quo, reprehenderit amet iure ad eos odio error! Iusto commodi repudiandae sint eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea recusandae eum velit. Suscipit quaerat maxime est, commodi quod delectus excepturi perferendis ea nulla soluta nam eligendi in voluptate eveniet enim! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur recusandae, sit temporibus mollitia nemo, reiciendis accusantium debitis alias ipsum velit iusto nesciunt facere voluptate maxime at distinctio repudiandae quaerat aut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur tempora, quibusdam quam facilis quae corrupti error assumenda eveniet totam temporibus perferendis, deleniti veritatis nostrum dicta numquam dolorem distinctio voluptatum sequi.</p>
+</body>
+</html>
