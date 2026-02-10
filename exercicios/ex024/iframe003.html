@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframes </title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vh;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faca uma Escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptas sint et blanditiis ad, saepe tempore impedit nisi quas cumque dicta, deleniti eum aspernatur, ut earum. Ex cupiditate blanditiis eius!</p> 
+
+    <ul>
+        <li><a href="paginas-extra/pag001.html" target="frame">Primeira pagina</a></li>
+        <li><a href="paginas-extra/pag002.html" target="frame">Segunda pagina</a></li>
+        <li><a href="paginas-extra/pag003.html" target="frame">Terceira pagina</a></li>
+    </ul>
+
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste corrupti dicta laboriosam rem sit ad reiciendis quaerat neque expedita numquam vitae saepe repudiandae, optio soluta eligendi. Eaque, expedita? Eius, odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minima, voluptatibus vitae unde nisi placeat a officia, eaque temporibus nam vel enim ratione eveniet repellat. Distinctio ex adipisci praesentium eius.</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>
+    Escolha uma opcao</h1><p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa nam explicabo ducimus. Quibusdam explicabo architecto est minus saepe ipsum? Ratione error molestias neque rerum molestiae esse maiores eum pariatur eligendi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, cumque ab quam et nobis totam porro odio atque neque inventore, suscipit libero dolorem adipisci laboriosam architecto saepe provident omnis ut!</p> <img src='imagens/open.png'>"  >
+        <p>Infelizmente seu navegador nao e compativel com isso</p>
+    </iframe>
+
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa nam explicabo ducimus. Quibusdam explicabo architecto est minus saepe ipsum? Ratione error molestias neque rerum molestiae esse maiores eum pariatur eligendi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, cumque ab quam et nobis totam porro odio atque neque inventore, suscipit libero dolorem adipisci laboriosam architecto saepe provident omnis ut!</p>
+
+</body>
+</html>
