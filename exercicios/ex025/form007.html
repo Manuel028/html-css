@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 007</title>
+</head>
+<body>
+    <h1>Outros Elementos de Formularios: Seletor, lista de dados e Area de texto</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="inome">Nome Completo:</label>
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="iidade">Idade</label>
+            <input type="number" name="idade" id="iidade"> 
+        </p>
+
+        <p>
+            <label for="iest">Sexo:</label>
+            <select name="estado" id="iest">
+                <option value="F">Femenino</option>
+                <option value="M">Masculino</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="iest">Cidade de Residencia:</label>
+            <select name="estado" id="iest">
+                <option value="" selected></option>
+                <option value="MP">Cidade de Maputo</option>
+                <option value="BR">Provincia de Maputo</option>
+                <option value="NP">Xai-xai</option>
+                <option value="NP">Inhambane</option>
+                <option value="NP">Beira</option>
+                <option value="NP">Chimoio</option>
+                <option value="NP">Tete</option>
+                <option value="NP">Quelimane</option>
+                <option value="NP">Nampula</option>
+                <option value="NP">Niassa</option>
+                <option value="NP">Cabo Delgado</option>
+            </select>
+        </p>
+        <p>
+            <label for="icurso">Cursos:</label>
+            <select name="curso" id="icurso">
+                <option value="" selected>*** Escolha ***</option>
+                <optgroup label="Engenharias">
+                    <option value="EE">Engenharia Eletrica</option>
+                    <option value="EEC">Engenharia Eletronica</option>
+                    <option value="EI">Engenharia Informatica</option>
+                    <option value="EA">Engenharia Agronomica</option>
+                    <option value="EQ">Engenharia Quimina</option>
+                </optgroup>
+
+                <optgroup label="Educaçao">
+                    <option value="">Ensino de Biologia</option>
+                    <option value="">Ensino de Matematica</option>
+                    <option value="">Ensino de Portugues</option>
+                    <option value="">Ensino de Fisica</option>
+                    <option value="">Ensino de Desenhos</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+          <label for="iprof">Profissao:</label> 
+          <input type="text" name="prof" id="iprof" list="lstprof"> 
+          <datalist id="lstprof">
+            <option >Administrador</option>
+            <option >Professor</option>
+            <option >Programador</option>
+            <option >Gestor</option>
+          </datalist>
+        </p>
+
+        <P>
+            <label for="imsg">Mensagens</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua Mensagem"></textarea>
+        </P>
+    
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+     </p>
+     </form>
+</body>
+</html>
