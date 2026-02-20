@@ -6,18 +6,21 @@
   <title>BIOFUND – Conservação da Biodiversidade em Moçambique</title>
   <meta name="description" content="A BIOFUND promove a conservação da biodiversidade em Moçambique através de financiamento, pesquisa e apoio a áreas de conservação.">
   <link rel="shortcut icon" href="biolife_pictures1/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media-query.css">
+  
     
 </head>
-<body>
+<body onresize="mudouTamanho()">
 
   <!-- Cabeçalho -->
   <header>
     <h2><a href="index.html">BIOFUND</a></h2>
     <div class="container nav">
        
-      
-      <nav aria-label="Menu principal">
+      <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+      <nav id="itens" aria-label="Menu principal">
         <ul>
           <li><a href="index.html">Início</a></li>
           <li><a href="sobre.html">Sobre</a></li>
@@ -119,5 +122,6 @@
     <p><a href="contactos.html" style="color:#aaffdd;">Contacto</a> | <a href="politicas.html" style="color:#aaffdd;">Política de Privacidade</a></p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

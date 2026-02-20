@@ -47,17 +47,33 @@
       padding: 0 1rem;
     }
 
+    span#burguer {
+    
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+}
+
+span#burguer:hover {
+   
+    color: white;
+}
+
     .nav {
-      display: flex;
+      display: block;
       justify-content: space-between;
       align-items: center;
+      
       
     }
 
     nav ul {
-      display: flex;
+      display: block;
       list-style: none;
       gap: 1.5rem;
+      padding-right: 100px;
     }
 
     nav a {
